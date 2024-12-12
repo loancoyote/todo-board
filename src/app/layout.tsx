@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import '@/app/_reset.scss';
+import '@/app/global.scss';
 
 interface RootLayoutProps {
   children: ReactNode;
