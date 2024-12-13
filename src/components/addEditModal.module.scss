@@ -1,5 +1,6 @@
 .addEditModal {
   position: fixed;
+  z-index: 100;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -9,7 +10,16 @@
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
   background-color: #fff;
   padding: 2rem 3rem;
+  &__backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
   &__ttl {
+    color: #333;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -21,6 +31,7 @@
       }
     }
     label {
+      color: #333;
       display: block;
       font-size: 1.5rem;
       font-weight: bold;

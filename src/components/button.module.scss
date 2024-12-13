@@ -10,6 +10,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease;
+
+  cursor: pointer;
+  &__close {
+    background-color: #ed620b;
+    transform: rotate(45deg);
+  }
   &__bar {
     width: 8rem;
     height: 8rem;
@@ -20,7 +27,7 @@
       transform: translate(-50%, -50%) rotate(90deg);
       display: inline-block;
       width: 6rem;
-      height: 0.1rem;
+      height: 0.2rem;
       background-color: #fff;
     }
     &--h {
@@ -30,7 +37,7 @@
       transform: translate(-50%, -50%);
       display: inline-block;
       width: 6rem;
-      height: 0.1rem;
+      height: 0.2rem;
       background-color: #fff;
     }
   }
